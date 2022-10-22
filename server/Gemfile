@@ -5,9 +5,9 @@ gem 'roda', '~> 2.26.0'
 gem 'celluloid', '~> 0.17.3'
 gem 'tilt-jbuilder'
 gem 'mutations'
-gem 'mongoid', '~> 5.2.1'
+gem 'mongoid', '~> 6.0.0'
 gem 'symmetric-encryption', '~> 3.9.1'
-gem 'activesupport', '~> 4.2'
+gem 'activesupport', '~> 5.2', '>= 5.2.4.3'
 gem 'faye-websocket', '~> 0.10.7'
 gem 'websocket-driver', '~> 0.6.2'
 gem 'kontena-websocket-client', '~> 0.1.1'
@@ -31,7 +31,7 @@ gem 'hkdf', '~> 0.3.0'
 group :development, :test do
   gem 'dotenv'
   gem 'rspec', '~> 3.3.0', require: false
-  gem 'mongoid-rspec', '~> 3.0.0', require: false
+  gem 'mongoid-rspec', '~> 4.0.0', require: false
   gem 'rack-test', require: false
   gem 'rerun', require: false
   gem 'simplecov', require: false
