@@ -95,8 +95,10 @@ GEM
     multipart-post (2.0.0)
     mutations (0.8.1)
       activesupport
+    nio4r (2.7.0)
     origin (2.3.0)
-    puma (3.9.1)
+    puma (6.4.2)
+      nio4r (~> 2.0)
     rack (2.0.3)
     rack-attack (5.0.1)
       rack
@@ -180,7 +182,7 @@ DEPENDENCIES
   mongoid-rspec (~> 3.0.0)
   msgpack
   mutations
-  puma
+  puma (>= 5.6.8)
   rack (~> 2.0.0)
   rack-attack
   rack-test
@@ -197,4 +199,4 @@ DEPENDENCIES
   websocket-driver (~> 0.6.2)
 
 BUNDLED WITH
-   1.16.0
+   1.17.3
