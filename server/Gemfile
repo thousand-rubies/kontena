@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rack', '~> 2.0.0'
-gem 'roda', '~> 2.26.0'
+gem 'rack', '~> 2.2.8', '>= 2.2.8.1'
+gem 'roda', '~> 2.27.0'
 gem 'celluloid', '~> 0.17.3'
 gem 'tilt-jbuilder'
 gem 'mutations'
@@ -24,7 +24,7 @@ gem 'json-jwt', '= 1.5.2'
 gem 'jsonpath'
 gem 'json-serializer'
 gem 'bcrypt'
-gem 'rack-attack'
+gem 'rack-attack', '>= 5.1.0'
 gem 'lru_redux', '~> 1.1.0'
 gem 'hkdf', '~> 0.3.0'
 
@@ -32,7 +32,7 @@ group :development, :test do
   gem 'dotenv'
   gem 'rspec', '~> 3.3.0', require: false
   gem 'mongoid-rspec', '~> 3.0.0', require: false
-  gem 'rack-test', require: false
+  gem 'rack-test', '>= 0.6.3', require: false
   gem 'rerun', require: false
   gem 'simplecov', require: false
   gem 'webmock', require: false
