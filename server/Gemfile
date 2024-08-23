@@ -31,7 +31,7 @@ gem 'hkdf', '~> 0.3.0'
 group :development, :test do
   gem 'dotenv'
   gem 'rspec', '~> 3.3.0', require: false
-  gem 'mongoid-rspec', '~> 3.0.0', require: false
+  gem 'mongoid-rspec', '~> 4.0.0', require: false
   gem 'rack-test', require: false
   gem 'rerun', require: false
   gem 'simplecov', require: false
