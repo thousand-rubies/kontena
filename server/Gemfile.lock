@@ -97,7 +97,7 @@ GEM
       activesupport
     origin (2.3.0)
     puma (3.9.1)
-    rack (2.0.3)
+    rack (2.2.12)
     rack-attack (5.0.1)
       rack
     rack-test (0.6.2)
@@ -181,7 +181,7 @@ DEPENDENCIES
   msgpack
   mutations
   puma
-  rack (~> 2.0.0)
+  rack (~> 2.2.12)
   rack-attack
   rack-test
   random_token
@@ -197,4 +197,4 @@ DEPENDENCIES
   websocket-driver (~> 0.6.2)
 
 BUNDLED WITH
-   1.16.0
+   1.17.3
