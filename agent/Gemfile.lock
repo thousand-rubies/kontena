@@ -29,31 +29,35 @@ GEM
       safe_yaml (~> 1.0.0)
     diff-lcs (1.3)
     docile (1.1.5)
-    docker-api (1.33.6)
-      excon (>= 0.38.0)
-      json
+    docker-api (1.34.2)
+      excon (>= 0.47.0)
+      multi_json
     dotenv (2.2.1)
     etcd (0.3.0)
       mixlib-log
-    excon (0.58.0)
-    ffi (1.9.18)
+    excon (1.2.5)
+      logger
+    ffi (1.17.2)
     fluent-logger (0.6.2)
       msgpack (>= 0.5.6, < 2)
     hashdiff (0.3.4)
     hitimes (1.2.3)
     i18n (0.8.6)
-    json (2.1.0)
-    kontena-websocket-client (0.1.0)
+    json (2.12.2)
+    kontena-websocket-client (0.1.1)
       websocket-driver (~> 0.6.5)
+    logger (1.7.0)
     minitest (5.10.3)
     mixlib-log (1.6.0)
     msgpack (1.0.3)
+    multi_json (1.15.0)
+    optimist (3.2.1)
     public_suffix (2.0.5)
     rake (12.0.0)
-    rbtrace (0.4.8)
+    rbtrace (0.5.2)
       ffi (>= 1.0.6)
       msgpack (>= 0.4.3)
-      trollop (>= 1.16.2)
+      optimist (>= 3.0.0)
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
       rspec-expectations (~> 3.6.0)
@@ -78,7 +82,6 @@ GEM
     thread_safe (0.3.6)
     timers (4.1.1)
       hitimes
-    trollop (2.1.2)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
     vmstat (2.3.0)
@@ -88,7 +91,7 @@ GEM
       hashdiff
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.2)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   ruby
@@ -96,14 +99,14 @@ PLATFORMS
 DEPENDENCIES
   activesupport (~> 4.2.0)
   celluloid (~> 0.17.3)
-  docker-api (~> 1.33.0)
+  docker-api (~> 1.34.0)
   dotenv
   etcd
   fluent-logger (~> 0.6.2)
-  kontena-websocket-client (~> 0.1.0)
+  kontena-websocket-client (~> 0.1.1)
   msgpack (~> 1.0.3)
   rake
-  rbtrace
+  rbtrace (>= 0.4.9)
   rspec
   ruby-prof
   simplecov
@@ -112,4 +115,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.15.4
+   1.17.3
